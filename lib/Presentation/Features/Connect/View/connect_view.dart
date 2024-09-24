@@ -46,9 +46,23 @@ class _ConnectViewState extends State<ConnectView> {
               },
             ),
           ),
-          const Expanded(
-            child: Center(
-              child: Text('Home'),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const TextField(
+                    decoration: InputDecoration(label: Text('Enter room Id')),
+                  ),
+                  const SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Join'),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
