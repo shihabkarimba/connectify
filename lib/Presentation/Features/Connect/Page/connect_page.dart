@@ -12,8 +12,12 @@ class ConnectPage extends StatefulWidget {
 class _ConnectPageState extends State<ConnectPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: ConnectView(),
+    return Scaffold(
+      floatingActionButton: ElevatedButton(
+        onPressed: () {},
+        child: const Text('Create room'),
+      ),
+      body: const ConnectView(),
     );
   }
 }
